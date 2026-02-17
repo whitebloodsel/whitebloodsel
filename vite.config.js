@@ -7,6 +7,9 @@ import {fileURLToPath} from 'url';
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react(), tailwindcss()],
+  define: {
+    'global': {},
+  },
   resolve: {
     alias: {
     '#components': resolve(dirname(fileURLToPath(import.meta.url)), 'src/components'),
@@ -14,6 +17,7 @@ export default defineConfig({
     '#store': resolve(dirname(fileURLToPath(import.meta.url)), 'src/store'),
     '#hoc': resolve(dirname(fileURLToPath(import.meta.url)), 'src/hoc'),
     '#windows': resolve(dirname(fileURLToPath(import.meta.url)), 'src/windows'),
+    'url': 'url',
     },
   },
 })
