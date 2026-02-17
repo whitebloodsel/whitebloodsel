@@ -3,7 +3,7 @@ import dayjs from 'dayjs';
 import { navLinks , navIcons} from '#constants/index.js';
 import React from 'react'
 import useWindowStore from '#store/window';
-import logo3Svg from '../assets/images/logo3.svg';
+import logo3Svg from '../assets/images/file-logo.svg';
 
 const Navbar = () => {
     const {openWindow} = useWindowStore();

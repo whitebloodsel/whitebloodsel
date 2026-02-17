@@ -18,12 +18,12 @@ const Home = () => {
     }
 
     useGSAP(() => {
-        Draggable.create(".folder")
+        // Draggable.create(".folder")
     }, []);
   return <section id="home">
-    <ul>
+    <ul className="grid grid-flow-col grid-cols-14 grid-rows-5 gap-1 pt-10 pl-8">
         {projects.map((project) => (
-            <li key={project.id} className={clsx("group folder", project.windowPosition)}
+            <li key={project.id} className="group folder flex flex-col items-center justify-center p-2"
             onClick={() => handleOpenProjectFinder(project)}>
                 <img src={project.icon} alt={project.name}/>
                 <p>{project.name}</p>
