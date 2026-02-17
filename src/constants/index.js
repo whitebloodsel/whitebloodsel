@@ -1,5 +1,3 @@
-
-
 const navLinks = [
   {
     id: 1,
@@ -44,18 +42,6 @@ const dockApps = [
     icon: "finder.png",
     canOpen: true,
   },
-  // {
-  //   id: "safari",
-  //   name: "Articles",
-  //   icon: "safari.png",
-  //   canOpen: true,
-  // },
-  // {
-  //   id: "photos",
-  //   name: "Gallery",
-  //   icon: "photos.png",
-  //   canOpen: true,
-  // },
   {
     id: "contact",
     name: "Contact",
@@ -68,12 +54,6 @@ const dockApps = [
     icon: "terminal.png",
     canOpen: true,
   },
-  // {
-  //   id: "trash",
-  //   name: "Trash",
-  //   icon: "trash.png",
-  //   canOpen: false,
-  // }
 ];
 
 
@@ -101,7 +81,7 @@ const techStack = [
   },
   {
     category: "Backend",
-    items: ["Flask", "Firebase"],
+    items: ["Flask"],
   },
   {
     category: "Database",
@@ -169,34 +149,13 @@ const photosLinks = [
   },
 ];
 
-const gallery = [
-  {
-    id: 1,
-    img: "/images/gal1.png",
-  },
-  {
-    id: 2,
-    img: "/images/gal2.png",
-  },
-  {
-    id: 3,
-    img: "/images/gal3.png",
-  },
-  {
-    id: 4,
-    img: "/images/gal4.png",
-  },
-];
-
 export {
   navLinks,
   navIcons,
   dockApps,
-  // blogPosts,
   techStack,
   socials,
   photosLinks,
-  gallery,
 };
 
 export const TAGS = [
@@ -208,30 +167,6 @@ export const TAGS = [
   { id: "t6", name: "Hackathon", color: "#cc5de8", type: "tag" },
   { id: "t7", name: "Personal", color: "#845ef7", type: "tag" },
 ];
-
-// Helper function to create tag locations with filtered children
-const createTagLocation = (tag) => {
-  const WORK_LOCATION_REF = {
-    id: 1,
-    type: "work",
-    name: "Projects",
-    icon: "/icons/work.svg",
-    kind: "folder",
-    children: [
-      
-    ],
-  };
-
-  return {
-    id: tag.id,
-    name: tag.name,
-    color: tag.color,
-    type: "tag",
-    icon: "/icons/tag.svg",
-    kind: "folder",
-    children: [], // Will be populated dynamically
-  };
-};
 
 const WORK_LOCATION = {
   id: 1,
@@ -1102,15 +1037,6 @@ const ABOUT_LOCATION = {
   icon: "/icons/info.svg",
   kind: "folder",
   children: [
-    // {
-    //   id: 1,
-    //   name: "casual-me.png",
-    //   icon: "/images/image.png",
-    //   kind: "file",
-    //   fileType: "img",
-    //   position: "top-10 left-5",
-    //   imageUrl: "/images/casual.png",
-    // },
     {
       id: 2,
       name: "lab-assistant-me.png",
@@ -1160,39 +1086,10 @@ const RESUME_LOCATION = {
       icon: "/images/pdf.png",
       kind: "file",
       fileType: "pdf",
-      // you can add `href` if you want to open a hosted resume
-      // href: "/your/resume/path.pdf",
     },
   ],
 };
 
-const TRASH_LOCATION = {
-  id: 4,
-  type: "trash",
-  name: "Trash",
-  icon: "/icons/trash.svg",
-  kind: "folder",
-  children: [
-    {
-      id: 1,
-      name: "trash1.png",
-      icon: "/images/image.png",
-      kind: "file",
-      fileType: "img",
-      position: "top-10 left-10",
-      imageUrl: "/images/trash-1.png",
-    },
-    {
-      id: 2,
-      name: "trash2.png",
-      icon: "/images/image.png",
-      kind: "file",
-      fileType: "img",
-      position: "top-40 left-80",
-      imageUrl: "/images/trash-2.png",
-    },
-  ],
-};
 
 export const locations = {
   work: WORK_LOCATION,
