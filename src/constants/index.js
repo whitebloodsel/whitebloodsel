@@ -1,3 +1,96 @@
+import iconWifiSvg from '../assets/icons/wifi.svg';
+import iconSearchSvg from '../assets/icons/search.svg';
+import iconUserSvg from '../assets/icons/user.svg';
+import iconModeSvg from '../assets/icons/mode.svg';
+import imageFinderPng from '../assets/images/finder.png';
+import imageContactPng from '../assets/images/contact.png';
+import imageTerminalPng from '../assets/images/terminal.png';
+import iconGithubSvg from '../assets/icons/github.svg';
+import iconMailSvg from '../assets/icons/mail.svg';
+import iconLinkedinSvg from '../assets/icons/linkedin.svg';
+import iconGicon1Svg from '../assets/icons/gicon1.svg';
+import iconGicon2Svg from '../assets/icons/gicon2.svg';
+import iconFileSvg from '../assets/icons/file.svg';
+import iconGicon4Svg from '../assets/icons/gicon4.svg';
+import iconGicon5Svg from '../assets/icons/gicon5.svg';
+import iconWorkSvg from '../assets/icons/work.svg';
+import imageFolderPng from '../assets/images/folder.png';
+import imageTxtPng from '../assets/images/txt.png';
+import imageSafariPng from '../assets/images/safari.png';
+import imageGithubPng from '../assets/images/github.png';
+import imageImagePng from '../assets/images/image.png';
+import imageTerraLandingPng from '../assets/images/terra/landing.png';
+import imageTerraLanding1Png from '../assets/images/terra/landing-1.png';
+import imageTerraLanding2Png from '../assets/images/terra/landing-2.png';
+import imageTerraDashboardPng from '../assets/images/terra/dashboard.png';
+import imageTerraDashboard1Png from '../assets/images/terra/dashboard-1.png';
+import imageTerraDashboard2Png from '../assets/images/terra/dashboard-2.png';
+import imageTerraDashboard3Png from '../assets/images/terra/dashboard-3.png';
+import imageVideoPng from '../assets/images/video.png';
+import imageCuraLandingPng from '../assets/images/cura/landing.png';
+import imageCuraLanding1Png from '../assets/images/cura/landing-1.png';
+import imageCuraLanding2Png from '../assets/images/cura/landing-2.png';
+import imageCuraProfile1Png from '../assets/images/cura/profile-1.png';
+import imageCuraHealth1Png from '../assets/images/cura/health1.png';
+import imageCuraHealth2Png from '../assets/images/cura/health2.png';
+import imageCuraHealth5Png from '../assets/images/cura/health5.png';
+import imageCuraHealth6Png from '../assets/images/cura/health6.png';
+import imageCuraHealth7Png from '../assets/images/cura/health7.png';
+import imageCuraWellness0Png from '../assets/images/cura/wellness0.png';
+import imageCuraDocanalysisPng from '../assets/images/cura/doc-analysis.png';
+import imageCuraDoctorPng from '../assets/images/cura/doctor.png';
+import imageCuraPharmacyPng from '../assets/images/cura/pharmacy.png';
+import imageCuraWellnessPng from '../assets/images/cura/wellness.png';
+import imageCuraReminderPng from '../assets/images/cura/reminder.png';
+import imageCuraUseractivityPng from '../assets/images/cura/user-activity.png';
+import imageCuraAdddocPng from '../assets/images/cura/add-doc.png';
+import imageIrisLoginPng from '../assets/images/iris/login.png';
+import imageIrisDashboardPng from '../assets/images/iris/dashboard.png';
+import imageIrisReminder0Png from '../assets/images/iris/reminder0.png';
+import imageIrisReminderPng from '../assets/images/iris/reminder.png';
+import imageIrisDashboard1Png from '../assets/images/iris/dashboard1.png';
+import imageIrisTextrecogPng from '../assets/images/iris/text-recog.png';
+import imageIrisObjrecogPng from '../assets/images/iris/obj_recog.png';
+import imageIrisObjPng from '../assets/images/iris/obj.png';
+import imageSpacepenStartPng from '../assets/images/spacepen/start.png';
+import imageSpacepenWelcomePng from '../assets/images/spacepen/welcome.png';
+import imageSpacepenPicktopicsPng from '../assets/images/spacepen/pick-topics.png';
+import imageSpacepenRolePng from '../assets/images/spacepen/role.png';
+import imageSpacepenDiscoverPng from '../assets/images/spacepen/discover.png';
+import imageSpacepenFriendsPng from '../assets/images/spacepen/friends.png';
+import imageSpacepenLettersPng from '../assets/images/spacepen/letters.png';
+import imageSpacepenWritePng from '../assets/images/spacepen/write.png';
+import imageSpacepenReadletterPng from '../assets/images/spacepen/read-letter.png';
+import imageSpacepenProfilePng from '../assets/images/spacepen/profile.png';
+import imageFigmaPng from '../assets/images/figma.png';
+import imageAiMusicLandingPng from '../assets/images/ai music/landing.png';
+import imageAiMusicFeaturesPng from '../assets/images/ai music/features.png';
+import imageAiMusicGenresPng from '../assets/images/ai music/genres.png';
+import imageAiMusicRecordPng from '../assets/images/ai music/record.png';
+import imageAiMusicResultPng from '../assets/images/ai music/result.png';
+import imageYogaLandingPng from '../assets/images/yoga/landing.png';
+import imageYogaFeaturesPng from '../assets/images/yoga/features.png';
+import imageYogaHowworkPng from '../assets/images/yoga/how-work.png';
+import imageYogaBeginpracticePng from '../assets/images/yoga/begin-practice.png';
+import imageYogaTrialPng from '../assets/images/yoga/trial.png';
+import imageSehatinOnboardingPng from '../assets/images/sehatin/onboarding.png';
+import imageSehatinLoginPng from '../assets/images/sehatin/login.png';
+import imageSehatinRegisterPng from '../assets/images/sehatin/register.png';
+import imageSehatinAddchildPng from '../assets/images/sehatin/add-child.png';
+import imageSehatinAddrecordPng from '../assets/images/sehatin/add-record.png';
+import imageSehatinImmunisationPng from '../assets/images/sehatin/immunisation.png';
+import imageSehatinEmergencycallPng from '../assets/images/sehatin/emergency-call.png';
+import imageSehatinHealtharticlesPng from '../assets/images/sehatin/health-articles.png';
+import imageSehatinWeatherPng from '../assets/images/sehatin/weather.png';
+import imageSehatinChatbotPng from '../assets/images/sehatin/chatbot.png';
+import imageMethDashboardPng from '../assets/images/meth/dashboard.png';
+import imageMethResultPng from '../assets/images/meth/result.png';
+import imageMethProcessingPng from '../assets/images/meth/processing.png';
+import iconInfoSvg from '../assets/icons/info.svg';
+import imageLabGisellaPng from '../assets/images/lab-gisella.png';
+import imageGisellaJpg from '../assets/images/gisella.jpg';
+import imagePdfPng from '../assets/images/pdf.png';
+
 const navLinks = [
   {
     id: 1,
@@ -19,19 +112,19 @@ const navLinks = [
 const navIcons = [
   {
     id: 1,
-    img: "/icons/wifi.svg",
+    img: iconWifiSvg,
   },
   {
     id: 2,
-    img: "/icons/search.svg",
+    img: iconSearchSvg,
   },
   {
     id: 3,
-    img: "/icons/user.svg",
+    img: iconUserSvg,
   },
   {
     id: 4,
-    img: "/icons/mode.svg",
+    img: iconModeSvg,
   },
 ];
 
@@ -39,19 +132,19 @@ const dockApps = [
   {
     id: "finder",
     name: "Portfolio",
-    icon: "finder.png",
+    icon: imageFinderPng,
     canOpen: true,
   },
   {
     id: "contact",
     name: "Contact",
-    icon: "contact.png",
+    icon: imageContactPng,
     canOpen: true,
   },
   {
     id: "terminal",
     name: "Skills",
-    icon: "terminal.png",
+    icon: imageTerminalPng,
     canOpen: true,
   },
 ];
@@ -101,21 +194,21 @@ const socials = [
   {
     id: 1,
     text: "Github",
-    icon: "/icons/github.svg",
+    icon: iconGithubSvg,
     bg: "#333",
     link: "https://github.com/whitebloodsel",
   },
   {
     id: 2,
     text: "Email",
-    icon: "/icons/mail.svg",
+    icon: iconMailSvg,
     bg: "#c71610",
     link: "mailto:gisella.j05@gmail.com",
   },
   {
     id: 3,
     text: "LinkedIn",
-    icon: "/icons/linkedin.svg",
+    icon: iconLinkedinSvg,
     bg: "#0a66c2",
     link: "https://www.linkedin.com/in/gisella-jayata",
   },
@@ -124,27 +217,27 @@ const socials = [
 const photosLinks = [
   {
     id: 1,
-    icon: "/icons/gicon1.svg",
+    icon: iconGicon1Svg,
     title: "Library",
   },
   {
     id: 2,
-    icon: "/icons/gicon2.svg",
+    icon: iconGicon2Svg,
     title: "Memories",
   },
   {
     id: 3,
-    icon: "/icons/file.svg",
+    icon: iconFileSvg,
     title: "Places",
   },
   {
     id: 4,
-    icon: "/icons/gicon4.svg",
+    icon: iconGicon4Svg,
     title: "People",
   },
   {
     id: 5,
-    icon: "/icons/gicon5.svg",
+    icon: iconGicon5Svg,
     title: "Favorites",
   },
 ];
@@ -172,14 +265,14 @@ const WORK_LOCATION = {
   id: 1,
   type: "work",
   name: "Projects",
-  icon: "/icons/work.svg",
+  icon: iconWorkSvg,
   kind: "folder",
   children: [
     // ▶ Project 1
     {
       id: 5,
       name: "Terra",
-      icon: "/images/folder.png",
+      icon: imageFolderPng,
       kind: "folder",
       position: "top-10 left-10", // icon position inside Finder
       windowPosition: "top-[7vh] left-7", // optional: Finder window position
@@ -188,7 +281,7 @@ const WORK_LOCATION = {
         {
           id: 1,
           name: "terra.txt",
-          icon: "/images/txt.png",
+          icon: imageTxtPng,
           kind: "file",
           fileType: "txt",
           position: "top-5 left-10",
@@ -210,7 +303,7 @@ const WORK_LOCATION = {
         {
           id: 2,
           name: "terra.com",
-          icon: "/images/safari.png",
+          icon: imageSafariPng,
           kind: "file",
           fileType: "url",
           href: "https://terranasa.vercel.app/",
@@ -219,7 +312,7 @@ const WORK_LOCATION = {
         {
           id: 3,
           name: "terra-github.com",
-          icon: "/images/github.png",
+          icon: imageGithubPng,
           kind: "file",
           fileType: "url",
           href: "https://github.com/Jaliem/nasahackathon",
@@ -228,44 +321,44 @@ const WORK_LOCATION = {
         {
           id: 4,
           name: "terra.png",
-          icon: "/images/image.png",
+          icon: imageImagePng,
           kind: "file",
           fileType: "img",
           position: "top-52 right-80",
           images: [
             {
               id: 401,
-              url: "/images/terra/landing.png",
+              url: imageTerraLandingPng,
               name: "Landing Page",
             },
             {
               id: 402,
-              url: "/images/terra/landing-1.png",
+              url: imageTerraLanding1Png,
               name: "Why Terra",
             },
             {
               id: 403,
-              url: "/images/terra/landing-2.png",
+              url: imageTerraLanding2Png,
               name: "Key Features",
             },
             {
               id: 404,
-              url: "/images/terra/dashboard.png",
+              url: imageTerraDashboardPng,
               name: "Dashboard Overview",
             },
             {
               id: 405,
-              url: "/images/terra/dashboard-1.png",
+              url: imageTerraDashboard1Png,
               name: "Loading Analysis",
             },
             {
               id: 406,
-              url: "/images/terra/dashboard-2.png",
+              url: imageTerraDashboard2Png,
               name: "Analysis Result",
             },
             {
               id: 407,
-              url: "/images/terra/dashboard-3.png",
+              url: imageTerraDashboard3Png,
               name: "Terra Bot",
             },
           ],
@@ -273,7 +366,7 @@ const WORK_LOCATION = {
         {
           id: 5,
           name: "terra.mp4",
-          icon: "/images/video.png",
+          icon: imageVideoPng,
           kind: "file",
           fileType: "fig",
           href: "https://youtu.be/tVUQzoj-hxs?si=ICdCvyg2KrxhTmwi",
@@ -286,7 +379,7 @@ const WORK_LOCATION = {
     {
       id: 6,
       name: "Cura",
-      icon: "/images/folder.png",
+      icon: imageFolderPng,
       kind: "folder",
       position: "top-10 left-35",
       windowPosition: "top-[20vh] left-7",
@@ -295,7 +388,7 @@ const WORK_LOCATION = {
         {
           id: 1,
           name: "cura.txt",
-          icon: "/images/txt.png",
+          icon: imageTxtPng,
           kind: "file",
           fileType: "txt",
           position: "top-5 right-10",
@@ -315,7 +408,7 @@ const WORK_LOCATION = {
         {
           id: 2,
           name: "cura-github.com",
-          icon: "/images/github.png",
+          icon: imageGithubPng,
           kind: "file",
           fileType: "url",
           href: "https://github.com/Jaliem/cura",
@@ -325,94 +418,94 @@ const WORK_LOCATION = {
         {
           id: 4,
           name: "cura.png",
-          icon: "/images/image.png",
+          icon: imageImagePng,
           kind: "file",
           fileType: "img",
           position: "top-52 left-80",
           images: [
             {
               id: 401,
-              url: "/images/cura/landing.png",
+              url: imageCuraLandingPng,
               name: "Landing Page",
             },
             {
               id: 402,
-              url: "/images/cura/landing-1.png",
+              url: imageCuraLanding1Png,
               name: "Cura's Agents",
             },
             {
               id: 403,
-              url: "/images/cura/landing-2.png",
+              url: imageCuraLanding2Png,
               name: "Choose Plan",
             },
             {
               id: 404,
-              url: "/images/cura/profile-1.png",
+              url: imageCuraProfile1Png,
               name: "Profile Page",
             },
             {
               id: 405,
-              url: "/images/cura/health1.png",
+              url: imageCuraHealth1Png,
               name: "Health Agent",
             },
             {
               id: 406,
-              url: "/images/cura/health2.png",
+              url: imageCuraHealth2Png,
               name: "Agent Analysis",
             },
             {
               id: 407,
-              url: "/images/cura/health5.png",
+              url: imageCuraHealth5Png,
               name: "Doctor Agent",
             },
             {
               id: 408,
-              url: "/images/cura/health6.png",
+              url: imageCuraHealth6Png,
               name: "Set Doctor Booking",
             },
             {
               id: 409,
-              url: "/images/cura/health7.png",
+              url: imageCuraHealth7Png,
               name: "Pharmacy Agent",
             },
             {
               id: 410,
-              url: "/images/cura/wellness0.png",
+              url: imageCuraWellness0Png,
               name: "Wellness Agent",
             },
             {
               id: 411,
-              url: "/images/cura/doc-analysis.png",
+              url: imageCuraDocanalysisPng,
               name: "Document Analysis",
             },
             {
               id: 412,
-              url: "/images/cura/doctor.png",
+              url: imageCuraDoctorPng,
               name: "Doctor Page",
             },
             {
               id: 413,
-              url: "/images/cura/pharmacy.png",
+              url: imageCuraPharmacyPng,
               name: "Pharmacy Page",
             },
             {
               id: 414,
-              url: "/images/cura/wellness.png",
+              url: imageCuraWellnessPng,
               name: "Wellness Page",
             },
             {
               id: 415,
-              url: "/images/cura/reminder.png",
+              url: imageCuraReminderPng,
               name: "Reminder Page",
             },
             {
               id: 416,
-              url: "/images/cura/user-activity.png",
+              url: imageCuraUseractivityPng,
               name: "Admin Page - User Activity",
             },
             {
               id: 417,
-              url: "/images/cura/add-doc.png",
+              url: imageCuraAdddocPng,
               name: "Admin Page - Add Doctor/Pharmacy",
             },
           ],
@@ -420,7 +513,7 @@ const WORK_LOCATION = {
         {
           id: 5,
           name: "cura.mp4",
-          icon: "/images/video.png",
+          icon: imageVideoPng,
           kind: "file",
           fileType: "fig",
           href: "https://www.youtube.com/watch?v=2Wo7EhBm-Gk",
@@ -433,7 +526,7 @@ const WORK_LOCATION = {
     {
       id: 7,
       name: "Iris",
-      icon: "/images/folder.png",
+      icon: imageFolderPng,
       kind: "folder",
       position: "top-10 left-60",
       windowPosition: "top-[33vh] left-7",
@@ -442,7 +535,7 @@ const WORK_LOCATION = {
         {
           id: 1,
           name: "iris.txt",
-          icon: "/images/txt.png",
+          icon: imageTxtPng,
           kind: "file",
           fileType: "txt",
           position: "top-5 left-10",
@@ -462,7 +555,7 @@ const WORK_LOCATION = {
         {
           id: 2,
           name: "iris-github.com",
-          icon: "/images/github.png",
+          icon: imageGithubPng,
           kind: "file",
           fileType: "url",
           href: "https://github.com/valentypo/iris_application",
@@ -471,7 +564,7 @@ const WORK_LOCATION = {
         {
           id: 4,
           name: "iris.png",
-          icon: "/images/image.png",
+          icon: imageImagePng,
           kind: "file",
           fileType: "img",
           position: "top-52 right-80",
@@ -479,42 +572,42 @@ const WORK_LOCATION = {
           images: [
             {
               id: 401,
-              url: "/images/iris/login.png",
+              url: imageIrisLoginPng,
               name: "Login Page",
             },
             {
               id: 402,
-              url: "/images/iris/dashboard.png",
+              url: imageIrisDashboardPng,
               name: "Dashboard Page",
             },
             {
               id: 403,
-              url: "/images/iris/reminder0.png",
+              url: imageIrisReminder0Png,
               name: "Add Reminder",
             },
             {
               id: 404,
-              url: "/images/iris/reminder.png",
+              url: imageIrisReminderPng,
               name: "Set Reminder Time",
             },
             {
               id: 405,
-              url: "/images/iris/dashboard1.png",
+              url: imageIrisDashboard1Png,
               name: "Dashboard Page",
             },
             {
               id: 406,
-              url: "/images/iris/text-recog.png",
+              url: imageIrisTextrecogPng,
               name: "Text Recognition",
             },
             {
               id: 407,
-              url: "/images/iris/obj_recog.png",
+              url: imageIrisObjrecogPng,
               name: "Object Recognition",
             },
             {
               id: 408,
-              url: "/images/iris/obj.png",
+              url: imageIrisObjPng,
               name: "Object Recognition",
             },
           ],
@@ -522,7 +615,7 @@ const WORK_LOCATION = {
         {
           id: 5,
           name: "iris.mp4",
-          icon: "/images/video.png",
+          icon: imageVideoPng,
           kind: "file",
           fileType: "url",
           href: "https://drive.google.com/file/d/1wqCd9k1_z7zeduwQUfpjJzqOxzsBXKPb/view",
@@ -534,7 +627,7 @@ const WORK_LOCATION = {
     {
       id: 8,
       name: "Spacepen",
-      icon: "/images/folder.png",
+      icon: imageFolderPng,
       kind: "folder",
       position: "top-10 left-82",
       windowPosition: "top-[46vh] left-7",
@@ -543,7 +636,7 @@ const WORK_LOCATION = {
         {
           id: 1,
           name: "spacepen.txt",
-          icon: "/images/txt.png",
+          icon: imageTxtPng,
           kind: "file",
           fileType: "txt",
           position: "top-5 left-10",
@@ -562,59 +655,59 @@ const WORK_LOCATION = {
         {
           id: 4,
           name: "spacepen.png",
-          icon: "/images/image.png",
+          icon: imageImagePng,
           kind: "file",
           fileType: "img",
           position: "top-52 right-80",
           images: [
             {
               id: 401,
-              url: "/images/spacepen/start.png",
+              url: imageSpacepenStartPng,
               name: "Start Page",
             },
             {
               id: 402,
-              url: "/images/spacepen/welcome.png",
+              url: imageSpacepenWelcomePng,
               name: "Welcome Page",
             },
             {
               id: 403,
-              url: "/images/spacepen/pick-topics.png",
+              url: imageSpacepenPicktopicsPng,
               name: "Pick Topics Page",
             },
             {
               id: 404,
-              url: "/images/spacepen/role.png",
+              url: imageSpacepenRolePng,
               name: "Choose Role Page",
             },
             {
               id: 405,
-              url: "/images/spacepen/discover.png",
+              url: imageSpacepenDiscoverPng,
               name: "Discover New Friends",
             },
             {
               id: 406,
-              url: "/images/spacepen/friends.png",
+              url: imageSpacepenFriendsPng,
               name: "Friends Page",
             },
             {
               id: 407,
-              url: "/images/spacepen/letters.png",
+              url: imageSpacepenLettersPng,
               name: "Read All Letters",
             },
             {
               id: 408,
-              url: "/images/spacepen/write.png",
+              url: imageSpacepenWritePng,
               name: "Write Letter",
             },
             {
               id: 409,
-              url: "/images/spacepen/read-letter.png",
+              url: imageSpacepenReadletterPng,
               name: "Read Letter",
             },
             {
               id: 410,
-              url: "/images/spacepen/profile.png",
+              url: imageSpacepenProfilePng,
               name: "Profile Page",
             },
           ],
@@ -622,7 +715,7 @@ const WORK_LOCATION = {
         {
           id: 3,
           name: "spacepen.mp4",
-          icon: "/images/video.png",
+          icon: imageVideoPng,
           kind: "file",
           fileType: "url",
           href: "https://youtu.be/O4FI8_x92ug?si=tedzGQ6rHcDcvPDt ",
@@ -631,7 +724,7 @@ const WORK_LOCATION = {
         {
           id: 5,
           name: "spacepen.fig",
-          icon: "/images/figma.png",
+          icon: imageFigmaPng,
           kind: "file",
           fileType: "fig",
           href: "https://www.figma.com/proto/rO6jrYRNirOuuA6qeRWbYz/SpacePen?node-id=0-1&t=hKP9b50lMNlSf9Cx-1",
@@ -643,7 +736,7 @@ const WORK_LOCATION = {
     {
       id: 9,
       name: "Genrify",
-      icon: "/images/folder.png",
+      icon: imageFolderPng,
       kind: "folder",
       position: "top-10 left-110",
       windowPosition: "top-[59vh] left-7",
@@ -652,7 +745,7 @@ const WORK_LOCATION = {
         {
           id: 1,
           name: "genrify.txt",
-          icon: "/images/txt.png",
+          icon: imageTxtPng,
           kind: "file",
           fileType: "txt",
           position: "top-5 left-10",
@@ -674,7 +767,7 @@ const WORK_LOCATION = {
         {
           id: 2,
           name: "genrify-github.com",
-          icon: "/images/github.png",
+          icon: imageGithubPng,
           kind: "file",
           fileType: "url",
           href: "https://github.com/revckries/music-genre-classifier",
@@ -683,34 +776,34 @@ const WORK_LOCATION = {
         {
           id: 4,
           name: "genrify.png",
-          icon: "/images/image.png",
+          icon: imageImagePng,
           kind: "file",
           fileType: "img",
           position: "top-52 right-80",
           images: [
             {
               id: 401,
-              url: "/images/ai music/landing.png",
+              url: imageAiMusicLandingPng,
               name: "Landing Page",
             },
             {
               id: 402,
-              url: "/images/ai music/features.png",
+              url: imageAiMusicFeaturesPng,
               name: "Features Page",
             },
             {
               id: 403,
-              url: "/images/ai music/genres.png",
+              url: imageAiMusicGenresPng,
               name: "Genres Page",
             },
             {
               id: 404,
-              url: "/images/ai music/record.png",
+              url: imageAiMusicRecordPng,
               name: "Classifier Page",
             },
             {
               id: 405,
-              url: "/images/ai music/result.png",
+              url: imageAiMusicResultPng,
               name: "Result Page",
             },
           ],
@@ -718,7 +811,7 @@ const WORK_LOCATION = {
         {
           id: 3,
           name: "genrify.mp4",
-          icon: "/images/video.png",
+          icon: imageVideoPng,
           kind: "file",
           fileType: "url",
           href: "https://drive.google.com/file/d/185KgRv1rY1LcmaswcjN2njK2kFhlmD4d/view",
@@ -727,7 +820,7 @@ const WORK_LOCATION = {
         {
           id: 5,
           name: "genrify.com",
-          icon: "/images/safari.png",
+          icon: imageSafariPng,
           kind: "file",
           fileType: "url",
           href: "https://music-genrify.vercel.app",
@@ -739,7 +832,7 @@ const WORK_LOCATION = {
     {
       id: 10,
       name: "Zenva",
-      icon: "/images/folder.png",
+      icon: imageFolderPng,
       kind: "folder",
       position: "top-40 left-10",
       windowPosition: "top-[7vh] left-30",
@@ -748,7 +841,7 @@ const WORK_LOCATION = {
         {
           id: 1,
           name: "zenva.txt",
-          icon: "/images/txt.png",
+          icon: imageTxtPng,
           kind: "file",
           fileType: "txt",
           position: "top-5 left-10",
@@ -770,7 +863,7 @@ const WORK_LOCATION = {
         {
           id: 2,
           name: "zenva-github.com",
-          icon: "/images/github.png",
+          icon: imageGithubPng,
           kind: "file",
           fileType: "url",
           href: "https://github.com/ve11yn/yoga-pose-correction",
@@ -779,34 +872,34 @@ const WORK_LOCATION = {
         {
           id: 4,
           name: "zenva.png",
-          icon: "/images/image.png",
+          icon: imageImagePng,
           kind: "file",
           fileType: "img",
           position: "top-52 right-80",
           images: [
             {
               id: 401,
-              url: "/images/yoga/landing.png",
+              url: imageYogaLandingPng,
               name: "Landing Page",
             },
             {
               id: 402,
-              url: "/images/yoga/features.png",
+              url: imageYogaFeaturesPng,
               name: "Features Page",
             },
             {
               id: 403,
-              url: "/images/yoga/how-work.png",
+              url: imageYogaHowworkPng,
               name: "How It Works",
             },
             {
               id: 404,
-              url: "/images/yoga/begin-practice.png",
+              url: imageYogaBeginpracticePng,
               name: "Begin Practice",
             },
             {
               id: 405,
-              url: "/images/yoga/trial.png",
+              url: imageYogaTrialPng,
               name: "Practice Page",
             },
           ],
@@ -814,7 +907,7 @@ const WORK_LOCATION = {
         {
           id: 3,
           name: "zenva.mp4",
-          icon: "/images/video.png",
+          icon: imageVideoPng,
           kind: "file",
           fileType: "url",
           href: "https://www.youtube.com/watch?v=Egh7fh0YLYE",
@@ -823,7 +916,7 @@ const WORK_LOCATION = {
         {
           id: 5,
           name: "zenva.com",
-          icon: "/images/safari.png",
+          icon: imageSafariPng,
           kind: "file",
           fileType: "url",
           href: "https://zenva-yogaflow.vercel.app/",
@@ -835,7 +928,7 @@ const WORK_LOCATION = {
     {
       id: 11,
       name: "Sehatin",
-      icon: "/images/folder.png",
+      icon: imageFolderPng,
       kind: "folder",
       position: "top-40 left-35",
       windowPosition: "top-[20vh] left-30",
@@ -844,7 +937,7 @@ const WORK_LOCATION = {
         {
           id: 1,
           name: "sehatin.txt",
-          icon: "/images/txt.png",
+          icon: imageTxtPng,
           kind: "file",
           fileType: "txt",
           position: "top-5 left-10",
@@ -864,7 +957,7 @@ const WORK_LOCATION = {
         {
           id: 2,
           name: "sehatin-github.com",
-          icon: "/images/github.png",
+          icon: imageGithubPng,
           kind: "file",
           fileType: "url",
           href: "https://github.com/StyNW7/Mobile_Programming_Final_Project",
@@ -873,59 +966,59 @@ const WORK_LOCATION = {
         {
           id: 4,
           name: "sehatin.png",
-          icon: "/images/image.png",
+          icon: imageImagePng,
           kind: "file",
           fileType: "img",
           position: "top-52 right-80",
           images: [
             {
               id: 401,
-              url: "/images/sehatin/onboarding.png",
+              url: imageSehatinOnboardingPng,
               name: "Onboarding Page",
             },
             {
               id: 402,
-              url: "/images/sehatin/login.png",
+              url: imageSehatinLoginPng,
               name: "Login Page",
             },
             {
               id: 403,
-              url: "/images/sehatin/register.png",
+              url: imageSehatinRegisterPng,
               name: "Register Page",
             },
             {
               id: 404,
-              url: "/images/sehatin/add-child.png",
+              url: imageSehatinAddchildPng,
               name: "Add Child",
             },
             {
               id: 405,
-              url: "/images/sehatin/add-record.png",
+              url: imageSehatinAddrecordPng,
               name: "Add Child's Health Record",
             },
             {
               id: 406,
-              url: "/images/sehatin/immunisation.png",
+              url: imageSehatinImmunisationPng,
               name: "Immunisation Page",
             },
             {
               id: 407,
-              url: "/images/sehatin/emergency-call.png",
+              url: imageSehatinEmergencycallPng,
               name: "Emergency Call",
             },
             {
               id: 408,
-              url: "/images/sehatin/health-articles.png",
+              url: imageSehatinHealtharticlesPng,
               name: "Health Articles Page",
             },
             {
               id: 409,
-              url: "/images/sehatin/weather.png",
+              url: imageSehatinWeatherPng,
               name: "Weather Page",
             },
             {
               id: 410,
-              url: "/images/sehatin/chatbot.png",
+              url: imageSehatinChatbotPng,
               name: "Sehatin Chatbot",
             },
           ],
@@ -933,7 +1026,7 @@ const WORK_LOCATION = {
         {
           id: 3,
           name: "sehatin.mp4",
-          icon: "/images/video.png",
+          icon: imageVideoPng,
           kind: "file",
           fileType: "url",
           href: "https://drive.google.com/file/d/1TpX60HEeo3mY2axjQbWMR6CxZqTgW820/view?usp=sharing",
@@ -942,7 +1035,7 @@ const WORK_LOCATION = {
         {
           id: 5,
           name: "sehatin.com",
-          icon: "/images/safari.png",
+          icon: imageSafariPng,
           kind: "file",
           fileType: "url",
           href: "https://drive.google.com/file/d/1UaLy_KtKzdTGj5C5e4f9BMsPWlmRWqWx/view?usp=sharing",
@@ -954,7 +1047,7 @@ const WORK_LOCATION = {
     {
       id: 12,
       name: "Meth",
-      icon: "/images/folder.png",
+      icon: imageFolderPng,
       kind: "folder",
       position: "top-40 left-60",
       windowPosition: "top-[33vh] left-30",
@@ -963,7 +1056,7 @@ const WORK_LOCATION = {
         {
           id: 1,
           name: "meth.txt",
-          icon: "/images/txt.png",
+          icon: imageTxtPng,
           kind: "file",
           fileType: "txt",
           position: "top-5 left-10",
@@ -985,7 +1078,7 @@ const WORK_LOCATION = {
         {
           id: 2,
           name: "meth-github.com",
-          icon: "/images/github.png",
+          icon: imageGithubPng,
           kind: "file",
           fileType: "url",
           href: "https://github.com/ve11yn/Meth",
@@ -994,24 +1087,24 @@ const WORK_LOCATION = {
         {
           id: 4,
           name: "meth.png",
-          icon: "/images/image.png",
+          icon: imageImagePng,
           kind: "file",
           fileType: "img",
           position: "top-52 right-80",
           images: [
             {
               id: 401,
-              url: "/images/meth/dashboard.png",
+              url: imageMethDashboardPng,
               name: "Upload Math Problem",
             },
             {
               id: 402,
-              url: "/images/meth/result.png",
+              url: imageMethResultPng,
               name: "Obtain Result",
             },
             {
               id: 403,
-              url: "/images/meth/processing.png",
+              url: imageMethProcessingPng,
               name: "Processing Steps",
             },
           ],
@@ -1019,7 +1112,7 @@ const WORK_LOCATION = {
         {
           id: 3,
           name: "meth.mp4",
-          icon: "/images/video.png",
+          icon: imageVideoPng,
           kind: "file",
           fileType: "url",
           href: "https://drive.google.com/drive/folders/1gYr2cnB3cQ5ZEI_6qN8rdwR2bkoHVLDA",
@@ -1034,31 +1127,31 @@ const ABOUT_LOCATION = {
   id: 2,
   type: "about",
   name: "About me",
-  icon: "/icons/info.svg",
+  icon: iconInfoSvg,
   kind: "folder",
   children: [
     {
       id: 2,
       name: "lab-assistant-me.png",
-      icon: "/images/image.png",
+      icon: imageImagePng,
       kind: "file",
       fileType: "img",
       position: "top-18 right-55",
-      imageUrl: "/images/lab-gisella.png",
+      imageUrl: imageLabGisellaPng,
     },
     {
       id: 3,
       name: "professional-me.png",
-      icon: "/images/image.png",
+      icon: imageImagePng,
       kind: "file",
       fileType: "img",
       position: "top-10 left-89",
-      imageUrl: "/images/gisella.jpg",
+      imageUrl: imageGisellaJpg,
     },
     {
       id: 4,
       name: "about-me.txt",
-      icon: "/images/txt.png",
+      icon: imageTxtPng,
       kind: "file",
       fileType: "txt",
       position: "top-50 left-20",
@@ -1077,13 +1170,13 @@ const RESUME_LOCATION = {
   id: 3,
   type: "resume",
   name: "Resume",
-  icon: "/icons/file.svg",
+  icon: iconFileSvg,
   kind: "folder",
   children: [
     {
       id: 1,
       name: "Resume.pdf",
-      icon: "/images/pdf.png",
+      icon: imagePdfPng,
       kind: "file",
       fileType: "pdf",
     },

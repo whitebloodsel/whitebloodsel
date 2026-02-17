@@ -5,6 +5,7 @@ import { Download } from "lucide-react";
 import { Document, Page, pdfjs } from "react-pdf";
 import "react-pdf/dist/Page/AnnotationLayer.css";
 import "react-pdf/dist/Page/TextLayer.css";
+import resumePdf from '../assets/files/resume.pdf';
 
 pdfjs.GlobalWorkerOptions.workerSrc = new URL(
   "pdfjs-dist/build/pdf.worker.min.mjs",
@@ -32,7 +33,7 @@ const Resume = () => {
         <h2>Resume.pdf</h2>
 
         <a
-          href="/files/resume.pdf"
+          href={resumePdf}
           download
           className="cursor-pointer"
           title="Download Resume"
@@ -45,9 +46,9 @@ const Resume = () => {
         <div className="flex items-center justify-center h-full bg-white">
           <div className="text-center text-gray-400">
             <p>Failed to load PDF</p>
-            <p className="text-xs mt-1">/files/resume.pdf</p>
+            <p className="text-xs mt-1">{resumePdf}</p>
             <a
-              href="/files/resume.pdf"
+              href={resumePdf}
               download
               className="text-blue-500 mt-2 block text-sm"
             >
@@ -57,7 +58,7 @@ const Resume = () => {
         </div>
       ) : (
         <Document
-          file="/files/resume.pdf"
+          file={resumePdf}
           onLoadSuccess={onDocumentLoadSuccess}
           onLoadError={onDocumentLoadError}
         >

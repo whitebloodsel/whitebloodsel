@@ -22,6 +22,8 @@
     "react-dom": "^19.2.0",
     "react-pdf": "^10.3.0",
     "react-tooltip": "^5.30.0",
+    "sharp": "^0.34.5",
+    "svgo": "^4.0.0",
     "tailwindcss": "^4.1.18",
     "zustand": "^5.0.11"
   },

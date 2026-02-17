@@ -96,7 +96,7 @@ const toggleApp = (app) => {
                     onClick={() => toggleApp({id, canOpen})}
                     >
                         <img 
-                        src={`/images/${icon}`}
+                        src={icon}
                         alt={name}
                         loading='lazy'>
 

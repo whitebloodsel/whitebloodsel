@@ -3,13 +3,14 @@ import dayjs from 'dayjs';
 import { navLinks , navIcons} from '#constants/index.js';
 import React from 'react'
 import useWindowStore from '#store/window';
+import logo3Svg from '../assets/images/logo3.svg';
 
 const Navbar = () => {
     const {openWindow} = useWindowStore();
   return (
     <nav>
         <div>
-            <img src="/images/logo3.svg" alt="logo" className="w-4.5 "/>
+            <img src={logo3Svg} alt="logo" className="w-4.5 "/>
             <p className='font-bold'>Gisella's Portfolio</p>
             <ul>
                 {navLinks.map(({id, name, type}) => (
