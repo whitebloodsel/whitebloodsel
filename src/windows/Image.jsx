@@ -85,7 +85,7 @@ const currentImgUrl = currentImg?.url || currentImg?.imageUrl || "";
               <motion.img
                 key={currentIndex}
                 src={currentImgUrl}
-                alt={gallery[currentIndex].name}
+                alt={gallery[currentIndex]?.name}
                 initial={{ opacity: 0, scale: 0.98 }}
                 animate={{ opacity: 1, scale: 1 }}
                 exit={{ opacity: 0, scale: 1.02 }}
