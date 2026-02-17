@@ -9,11 +9,11 @@ const StickyNote = () => {
       <div className='p-4 pt-2'>
         <h3 className="font-bold mb-2 text-gray-800">To-Dos's</h3>
         <ul className=" text-gray-700 text-sm space-y-1">
-          <li>Land my first tech job</li>
-          <li>Graduate ASAP</li>
-          <li>Learn how to swim</li>
+          <li>land my first tech job</li>
+          <li>graduate ASAP</li>
+          <li>learn how to swim</li>
           <li className="line-through">make portfolio</li>
-          <li>Exercise more!!</li>
+          <li>exercise more!!</li>
         </ul>
       </div>
       

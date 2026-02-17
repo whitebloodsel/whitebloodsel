@@ -8,34 +8,26 @@ import { Terminal, Resume, Finder, Text, Contacts, Image} from '#windows';
 gsap.registerPlugin(Draggable);
 
 const App = () => {
-  const [showOrientationWarning, setShowOrientationWarning] = useState(false);
-
-  const checkOrientation = () => {
-    const isMobile = window.innerWidth < 768; // Tailwind's 'md' breakpoint
-    const isPortrait = window.innerHeight > window.innerWidth;
-
-    if (isMobile && isPortrait) {
-      setShowOrientationWarning(true);
-    } else {
-      setShowOrientationWarning(false);
-    }
-  };
+  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    checkOrientation(); // Check on initial render
-    window.addEventListener('resize', checkOrientation);
-    window.addEventListener('orientationchange', checkOrientation);
-
-    return () => {
-      window.removeEventListener('resize', checkOrientation);
-      window.removeEventListener('orientationchange', checkOrientation);
+    const checkDevice = () => {
+      setIsMobile(window.innerWidth < 1024); 
     };
+
+    checkDevice();
+    window.addEventListener("resize", checkDevice);
+
+    return () => window.removeEventListener("resize", checkDevice);
   }, []);
+
+ if (isMobile) {
+    return <OrientationWarning showWarning={true} />;
+  }
 
   return (
     <main>
-      <OrientationWarning />
-      {!showOrientationWarning && (
+     
         <>
           <Navbar />
           <Dock />
@@ -49,7 +41,7 @@ const App = () => {
           <Image />
           <Contacts />
         </>
-      )}
+
     </main>
   )
 }
