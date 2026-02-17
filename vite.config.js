@@ -8,8 +8,9 @@ import { ViteImageOptimizer } from 'vite-plugin-image-optimizer';
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react(), tailwindcss(), ViteImageOptimizer({
-      webp: { quality: 75 },
-      avif: { quality: 70 },
+      webp: { quality: 60 },
+      avif: { quality: 60 },
+      logStats: true
     }),],
   
   define: {
