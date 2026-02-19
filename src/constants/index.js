@@ -153,11 +153,11 @@ const dockApps = [
 
 const techStack = [
   {
-    category: "Programming",
-    items: ["Python", "C", "Java"],
+    category: "Lnaguages",
+    items: ["Python", "C", "Java", "Javascript", "Typescript"],
   },
   {
-    category: "ML/AI",
+    category: "AI/ML",
     items: ["PyTorch", "TensorFlow", "Scikit-Learn"],
   },
   {
@@ -170,7 +170,7 @@ const techStack = [
   },
   {
     category: "Frontend",
-    items: ["React.js", "Next.js", "Tailwind CSS"],
+    items: ["React", "Next.js", "Tailwind CSS"],
   },
   {
     category: "Backend",
@@ -181,8 +181,8 @@ const techStack = [
     items: ["MySQL", "SQL Server", "Firebase"],
   },
   {
-    category: "Dev Tools",
-    items: ["Git", "GitHub"],
+    category: "Tools",
+    items: ["Git", "GitHub", "Android Studio", "Visual Paradigm"],
   },
   {
     category: "Design",
@@ -286,7 +286,7 @@ const WORK_LOCATION = {
           fileType: "txt",
           position: "top-5 left-10",
           description: [
-            "An urban planning platform that leverages NASA Earth data to help city planners develop sustainable growth strategies. Terra provides environmental risk assessment, climate data visualization, and AI-powered insights.",
+            "An urban planning platform that leverages NASA Earth data to help city planners develop sustainable growth strategies. It provides environmental risk assessment, climate data visualization, and AI-powered insights.",
             "",
             { text: "🚀 TECH STACK:", style: "bold" },
             "Next.js, Tailwind CSS",
@@ -396,7 +396,7 @@ const WORK_LOCATION = {
             "Cura is an intelligent healthcare ecosystem designed for modern hospitals to empower patients. It utilizes a network of specialized agents to coordinate care, manage prescriptions, and secure sensitive medical data.",
             "",
             { text: "🚀 TECH STACK:", style: "bold" },
-            "React.js, Tailwind CSS, Fetch.ai Agents, Motoko, Python, Flask",
+            "React, Tailwind CSS, Motoko, Flask, Fetch.ai Agents",
             "",
             { text: "🔑 KEY FEATURES:", style: "bold" },
             "1. Clinical Integration: Empowers users by connecting them directly to hospital practitioners for instant medical diagnoses and appointment scheduling",
@@ -543,7 +543,7 @@ const WORK_LOCATION = {
             "A mobile app that helps visually impaired and elders navigate their surroundings. By leveraging real-time text recognition, object recognition and spatial audio cues, Iris provides an intuitive way for users to understand and interact with their environment.",
             "",
             { text: "🚀 TECH STACK:", style: "bold" },
-            "Flutter, YOLOv11, Google Cloud (Vision & TTS), Firebase (Firestore, Auth)",
+            "Flutter, Flask, YOLOv11, Google Cloud (Vision & TTS), Firebase (Firestore, Auth)",
             "",
             { text: "🔑 KEY FEATURES:", style: "bold" },
             "1. Real-Time Text Recognition: Uses OCR to read signs, menus, and documents aloud.",
@@ -846,10 +846,10 @@ const WORK_LOCATION = {
           fileType: "txt",
           position: "top-5 left-10",
           description: [
-            "An AI-powered yoga assistant designed to provide real-time pose detection and corrective feedback using deep learning and spatial analysis.",
+            "An AI-powered yoga assistant designed to provide real-time pose detection and corrective feedback using machine learning and spatial analysis.",
             "",
             { text: "🚀 TECH STACK:", style: "bold" },
-            "Next.js, Tailwind CSS, Python, MediaPipe, OpenCV, TensorFlow",
+            "Next.js, Tailwind CSS, FastAPI, MediaPipe, Scikit-learn, OpenCV",
             "",
             { text: "📡 MODEL INFO:", style: "bold" },
             "Utilizes a yoga pose dataset from Roboflow to train a Support Vector Machine (SVM) classifier, achieving high-precision pose recognition based on 33 spatial keypoints extracted via MediaPipe.",
