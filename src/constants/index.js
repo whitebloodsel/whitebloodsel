@@ -153,7 +153,7 @@ const dockApps = [
 
 const techStack = [
   {
-    category: "Lnaguages",
+    category: "Languages",
     items: ["Python", "C", "Java", "Javascript", "Typescript"],
   },
   {
