@@ -4,10 +4,13 @@
 
 html,
 body {
-  width: 100dvw;
+  width: 100vw;
   /* overflow: */
-  height: 100dvh;
+  height: 100vh;
   background-color: rgb(230, 229, 228);
+
+  overflow: hidden; 
+  position: fixed;
   /* background-image: url("/images/wallpaper1.jpeg");   */
   background-size: cover;
   background-repeat: no-repeat;
@@ -313,14 +316,14 @@ body {
   }
 
   #resume {
-    @apply w-fit h-fit absolute top-16 left-7/12 bg-white shadow-2xl drop-shadow-2xl rounded-xl overflow-hidden;
+  @apply w-[535px] h-[850px] absolute top-16 left-7/12 bg-white shadow-2xl drop-shadow-2xl rounded-xl overflow-hidden;
 
-    #window-header {
-      h2 {
-        @apply font-bold text-sm text-center flex-1;
-      }
+  #window-header {
+    h2 {
+      @apply font-bold text-sm text-center flex-1;
     }
   }
+}
 
   #finder {
     @apply absolute inset-0 w-full h-full sm:w-[750px] sm:h-[530px] sm:left-40 sm:top-20 shadow-2xl drop-shadow-2xl overflow-hidden rounded-xl max-h-screen;
