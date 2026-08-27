@@ -154,7 +154,7 @@ const dockApps = [
 const techStack = [
   {
     category: "Languages",
-    items: ["Python", "C", "Java", "Javascript", "Typescript"],
+    items: ["Swift", "Python", "C", "Java"],
   },
   {
     category: "AI/ML",
@@ -165,24 +165,28 @@ const techStack = [
     items: ["Hugging Face", "OpenCV", "Numpy", "Pandas"],
   },
   {
+    category: "Web",
+    items: ["React", "Next.js", "Tailwind CSS", "Flask"],
+  },
+  {
     category: "Mobile",
-    items: ["React Native", "Flutter"],
+    items: ["Flutter", "React Native"],
   },
-  {
-    category: "Frontend",
-    items: ["React", "Next.js", "Tailwind CSS"],
-  },
-  {
-    category: "Backend",
-    items: ["Flask"],
-  },
-  {
-    category: "Database",
-    items: ["MySQL", "SQL Server", "Firebase"],
-  },
+  // {
+  //   category: "Backend",
+  //   items: ["Flask"],
+  // },
+  // {
+  //   category: "Database",
+  //   items: ["MySQL", "SQL Server", "Firebase"],
+  // },
   {
     category: "Tools",
-    items: ["Git", "GitHub", "Android Studio", "Visual Paradigm"],
+    items: ["Android Studio", "Git", "GitHub", "Tableu"],
+  },
+  {
+    category: "",
+    items: ["Visual Paradigm"],
   },
   {
     category: "Design",
@@ -284,7 +288,7 @@ const WORK_LOCATION = {
           icon: imageTxtPng,
           kind: "file",
           fileType: "txt",
-          position: "top-5 left-10",
+          position: "top-10 left-10",
           description: [
             "An urban planning platform that leverages NASA Earth data to help city planners develop sustainable growth strategies. It provides environmental risk assessment, climate data visualization, and AI-powered insights.",
             "",
@@ -307,7 +311,7 @@ const WORK_LOCATION = {
           kind: "file",
           fileType: "url",
           href: "https://terranasa.vercel.app/",
-          position: "top-10 right-20",
+          position: "top-40 left-40",
         },
         {
           id: 3,
@@ -316,7 +320,7 @@ const WORK_LOCATION = {
           kind: "file",
           fileType: "url",
           href: "https://github.com/Jaliem/nasahackathon",
-          position: "top-35 right-50",
+          position: "top-40 left-10",
         },
         {
           id: 4,
@@ -324,7 +328,7 @@ const WORK_LOCATION = {
           icon: imageImagePng,
           kind: "file",
           fileType: "img",
-          position: "top-52 right-80",
+          position: "top-10 left-30",
           images: [
             {
               id: 401,
@@ -370,7 +374,7 @@ const WORK_LOCATION = {
           kind: "file",
           fileType: "fig",
           href: "https://youtu.be/tVUQzoj-hxs?si=ICdCvyg2KrxhTmwi",
-          position: "top-60 right-20",
+          position: "top-10 left-50",
         },
       ],
     },
@@ -391,7 +395,7 @@ const WORK_LOCATION = {
           icon: imageTxtPng,
           kind: "file",
           fileType: "txt",
-          position: "top-5 right-10",
+          position: "top-10 left-10",
           description: [
             "Cura is an intelligent healthcare ecosystem designed for modern hospitals to empower patients. It utilizes a network of specialized agents to coordinate care, manage prescriptions, and secure sensitive medical data.",
             "",
@@ -412,7 +416,7 @@ const WORK_LOCATION = {
           kind: "file",
           fileType: "url",
           href: "https://github.com/Jaliem/cura",
-          position: "top-20 left-20",
+          position: "top-40 left-10",
         },
 
         {
@@ -421,7 +425,7 @@ const WORK_LOCATION = {
           icon: imageImagePng,
           kind: "file",
           fileType: "img",
-          position: "top-52 left-80",
+          position: "top-10 left-30",
           images: [
             {
               id: 401,
@@ -517,7 +521,7 @@ const WORK_LOCATION = {
           kind: "file",
           fileType: "fig",
           href: "https://www.youtube.com/watch?v=2Wo7EhBm-Gk",
-          position: "top-60 left-5",
+          position: "top-10 left-50",
         },
       ],
     },
@@ -538,7 +542,7 @@ const WORK_LOCATION = {
           icon: imageTxtPng,
           kind: "file",
           fileType: "txt",
-          position: "top-5 left-10",
+          position: "top-10 left-10",
           description: [
             "A mobile app that helps visually impaired and elders navigate their surroundings. By leveraging real-time text recognition, object recognition and spatial audio cues, Iris provides an intuitive way for users to understand and interact with their environment.",
             "",
@@ -559,7 +563,7 @@ const WORK_LOCATION = {
           kind: "file",
           fileType: "url",
           href: "https://github.com/valentypo/iris_application",
-          position: "top-10 right-20",
+          position: "top-40 left-10",
         },
         {
           id: 4,
@@ -567,7 +571,7 @@ const WORK_LOCATION = {
           icon: imageImagePng,
           kind: "file",
           fileType: "img",
-          position: "top-52 right-80",
+          position: "top-10 left-30",
           isMobileFormat: true,
           images: [
             {
@@ -619,7 +623,7 @@ const WORK_LOCATION = {
           kind: "file",
           fileType: "url",
           href: "https://drive.google.com/file/d/1wqCd9k1_z7zeduwQUfpjJzqOxzsBXKPb/view",
-          position: "top-60 right-20",
+          position: "top-10 left-50",
         },
       ],
     },
@@ -639,7 +643,7 @@ const WORK_LOCATION = {
           icon: imageTxtPng,
           kind: "file",
           fileType: "txt",
-          position: "top-5 left-10",
+          position: "top-10 left-10",
           description: [
             "SpacePen is a global pen pal platform designed to launch meaningful connections between curious minds. Unlike instant messaging, it uses a unique delivery pace to encourage thoughtful letters and genuine cultural exchange.",
             "",
@@ -658,7 +662,7 @@ const WORK_LOCATION = {
           icon: imageImagePng,
           kind: "file",
           fileType: "img",
-          position: "top-52 right-80",
+          position: "top-10 left-40",
           images: [
             {
               id: 401,
@@ -719,7 +723,7 @@ const WORK_LOCATION = {
           kind: "file",
           fileType: "url",
           href: "https://youtu.be/O4FI8_x92ug?si=tedzGQ6rHcDcvPDt ",
-          position: "top-30 right-24",
+          position: "top-10 left-70",
         },
         {
           id: 5,
@@ -728,7 +732,7 @@ const WORK_LOCATION = {
           kind: "file",
           fileType: "fig",
           href: "https://www.figma.com/proto/rO6jrYRNirOuuA6qeRWbYz/SpacePen?node-id=0-1&t=hKP9b50lMNlSf9Cx-1",
-          position: "top-60 right-20",
+          position: "top-40 left-10",
         },
       ],
     },
@@ -748,7 +752,7 @@ const WORK_LOCATION = {
           icon: imageTxtPng,
           kind: "file",
           fileType: "txt",
-          position: "top-5 left-10",
+          position: "top-10 left-10",
           description: [
             "A deep learning web application that classifies music genres from audio recordings using a CNN-BiLSTM model trained on the GTZAN Music Genre Dataset.",
             "",
@@ -771,7 +775,7 @@ const WORK_LOCATION = {
           kind: "file",
           fileType: "url",
           href: "https://github.com/revckries/music-genre-classifier",
-          position: "top-30 right-30",
+          position: "top-40 left-10",
         },
         {
           id: 4,
@@ -779,7 +783,7 @@ const WORK_LOCATION = {
           icon: imageImagePng,
           kind: "file",
           fileType: "img",
-          position: "top-52 right-80",
+          position: "top-10 left-35",
           images: [
             {
               id: 401,
@@ -815,7 +819,7 @@ const WORK_LOCATION = {
           kind: "file",
           fileType: "url",
           href: "https://drive.google.com/file/d/185KgRv1rY1LcmaswcjN2njK2kFhlmD4d/view",
-          position: "top-5 right-80",
+          position: "top-10 left-60",
         },
         {
           id: 5,
@@ -824,7 +828,7 @@ const WORK_LOCATION = {
           kind: "file",
           fileType: "url",
           href: "https://music-genrify.vercel.app",
-          position: "top-60 right-20",
+          position: "top-40 left-55",
         },
       ],
     },
@@ -844,7 +848,7 @@ const WORK_LOCATION = {
           icon: imageTxtPng,
           kind: "file",
           fileType: "txt",
-          position: "top-5 left-10",
+          position: "top-10 left-10",
           description: [
             "An AI-powered yoga assistant designed to provide real-time pose detection and corrective feedback using machine learning and spatial analysis.",
             "",
@@ -867,7 +871,7 @@ const WORK_LOCATION = {
           kind: "file",
           fileType: "url",
           href: "https://github.com/ve11yn/yoga-pose-correction",
-          position: "top-30 right-30",
+          position: "top-40 left-10",
         },
         {
           id: 4,
@@ -875,7 +879,7 @@ const WORK_LOCATION = {
           icon: imageImagePng,
           kind: "file",
           fileType: "img",
-          position: "top-52 right-80",
+          position: "top-10 left-30",
           images: [
             {
               id: 401,
@@ -911,7 +915,7 @@ const WORK_LOCATION = {
           kind: "file",
           fileType: "url",
           href: "https://www.youtube.com/watch?v=Egh7fh0YLYE",
-          position: "top-5 right-80",
+          position: "top-10 left-50",
         },
         {
           id: 5,
@@ -920,7 +924,7 @@ const WORK_LOCATION = {
           kind: "file",
           fileType: "url",
           href: "https://zenva-yogaflow.vercel.app/",
-          position: "top-60 right-20",
+          position: "top-40 left-50",
         },
       ],
     },
@@ -940,7 +944,7 @@ const WORK_LOCATION = {
           icon: imageTxtPng,
           kind: "file",
           fileType: "txt",
-          position: "top-5 left-10",
+          position: "top-10 left-10",
           description: [
             "Sehatin is a native Android health-tech solution focused on maternal and child welfare, integrating real-time health tracking with AI-driven advisory services.",
             "",
@@ -961,7 +965,7 @@ const WORK_LOCATION = {
           kind: "file",
           fileType: "url",
           href: "https://github.com/StyNW7/Mobile_Programming_Final_Project",
-          position: "top-30 right-30",
+          position: "top-40 left-10",
         },
         {
           id: 4,
@@ -969,7 +973,7 @@ const WORK_LOCATION = {
           icon: imageImagePng,
           kind: "file",
           fileType: "img",
-          position: "top-52 right-80",
+          position: "top-10 left-40",
           images: [
             {
               id: 401,
@@ -1030,7 +1034,7 @@ const WORK_LOCATION = {
           kind: "file",
           fileType: "url",
           href: "https://drive.google.com/file/d/1TpX60HEeo3mY2axjQbWMR6CxZqTgW820/view?usp=sharing",
-          position: "top-5 right-80",
+          position: "top-10 left-70",
         },
         {
           id: 5,
@@ -1039,7 +1043,7 @@ const WORK_LOCATION = {
           kind: "file",
           fileType: "url",
           href: "https://drive.google.com/file/d/1UaLy_KtKzdTGj5C5e4f9BMsPWlmRWqWx/view?usp=sharing",
-          position: "top-60 right-20",
+          position: "top-40 left-55",
         },
       ],
     },
@@ -1059,7 +1063,7 @@ const WORK_LOCATION = {
           icon: imageTxtPng,
           kind: "file",
           fileType: "txt",
-          position: "top-5 left-10",
+          position: "top-10 left-10",
           description: [
             "Meth is a handwritten math-solver that uses a Convolutional Neural Network (CNN) to recognize and solve math problems from uploaded images.",
             "",
@@ -1082,7 +1086,7 @@ const WORK_LOCATION = {
           kind: "file",
           fileType: "url",
           href: "https://github.com/ve11yn/Meth",
-          position: "top-30 right-30",
+          position: "top-40 left-10",
         },
         {
           id: 4,
@@ -1090,7 +1094,7 @@ const WORK_LOCATION = {
           icon: imageImagePng,
           kind: "file",
           fileType: "img",
-          position: "top-52 right-80",
+          position: "top-10 left-30",
           images: [
             {
               id: 401,
@@ -1116,7 +1120,7 @@ const WORK_LOCATION = {
           kind: "file",
           fileType: "url",
           href: "https://drive.google.com/drive/folders/1gYr2cnB3cQ5ZEI_6qN8rdwR2bkoHVLDA",
-          position: "top-5 right-80",
+          position: "top-10 left-50",
         },
       ],
     },
@@ -1136,7 +1140,7 @@ const ABOUT_LOCATION = {
       icon: imageImagePng,
       kind: "file",
       fileType: "img",
-      position: "top-18 right-55",
+      position: "top-10 left-40",
       imageUrl: imageLabGisellaPng,
     },
     {
@@ -1145,7 +1149,7 @@ const ABOUT_LOCATION = {
       icon: imageImagePng,
       kind: "file",
       fileType: "img",
-      position: "top-10 left-89",
+      position: "top-10 left-80",
       imageUrl: imageGisellaJpg,
     },
     {
@@ -1154,7 +1158,7 @@ const ABOUT_LOCATION = {
       icon: imageTxtPng,
       kind: "file",
       fileType: "txt",
-      position: "top-50 left-20",
+      position: "top-10 left-10",
       subtitle: "Nice to meet you! 👋",
       image: "",
       description: [

@@ -27,9 +27,8 @@ const StickyNote = () => {
         <ul className="text-gray-700 text-xs md:text-sm space-y-1 mt-2">
           <li className="flex gap-1">land my first tech job</li>
           <li className="flex gap-1">graduate ASAP</li>
-          <li className="flex gap-1">learn how to swim</li>
-          <li className="line-through text-gray-800 opacity-60">make portfolio</li>
-          <li className="flex gap-1">exercise more!!</li>
+          <li className="line-through text-gray-800 opacity-60">build portfolio</li>
+          <li className="flex gap-1">. ܁₊ ⊹ . ܁ ⟡ ܁ . ⊹ ₊ ܁. </li>
         </ul>
       </div>
       
