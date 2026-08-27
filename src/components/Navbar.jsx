@@ -4,6 +4,7 @@ import { navLinks , navIcons} from '#constants/index.js';
 import React from 'react'
 import useWindowStore from '#store/window';
 import logo3Svg from '../assets/images/file-logo.svg';
+import iconWifiSvg from '../assets/icons/wifi.svg';
 
 const Navbar = () => {
     const {openWindow} = useWindowStore();
@@ -31,7 +32,12 @@ const Navbar = () => {
             ))}
             </ul>
 
-            <time>{dayjs().format('ddd MMM D h:mm A')}</time>
+            <time className="max-sm:hidden">{dayjs().format('ddd MMM D h:mm A')}</time>
+
+            <div className="mobile-status">
+                <time>{dayjs().format('h:mm A')}</time>
+                <img src={iconWifiSvg} alt="wifi" />
+            </div>
         </div>
     </nav>
   )

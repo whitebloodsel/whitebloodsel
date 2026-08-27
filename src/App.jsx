@@ -1,47 +1,32 @@
 import gsap from 'gsap';
 import { Draggable } from 'gsap/Draggable';
 
-import { Dock, Home, Navbar, StickyNote, OrientationWarning } from '#components'
-import React, { useState, useEffect } from 'react'
+import { Dock, Home, Navbar, StickyNote, MobileNavbar, ProjectWidget } from '#components'
+import React from 'react'
 import { Terminal, Resume, Finder, Text, Contacts, Image} from '#windows';
 
 gsap.registerPlugin(Draggable);
 
 const App = () => {
-  const [isMobile, setIsMobile] = useState(false);
-
-  useEffect(() => {
-    const checkDevice = () => {
-      setIsMobile(window.innerWidth < 1024); 
-    };
-
-    checkDevice();
-    window.addEventListener("resize", checkDevice);
-
-    return () => window.removeEventListener("resize", checkDevice);
-  }, []);
-
- if (isMobile) {
-    return <OrientationWarning showWarning={true} />;
-  }
-
   return (
     <main>
-     
-        <>
-          <Navbar />
-          <Dock />
-          <Home />
-          <StickyNote />
+      <Navbar />
+      <Dock />
 
-          <Terminal />
-          <Resume />
-          <Finder />
-          <Text />
-          <Image />
-          <Contacts />
-        </>
+      <section id="mobile-widgets">
+        <StickyNote />
+        <ProjectWidget />
+      </section>
 
+      <Home />
+      <MobileNavbar />
+
+      <Terminal />
+      <Resume />
+      <Finder />
+      <Text />
+      <Image />
+      <Contacts />
     </main>
   )
 }

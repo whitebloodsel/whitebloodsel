@@ -86,10 +86,10 @@ import imageSehatinChatbotPng from '../assets/images/sehatin/chatbot.png';
 import imageMethDashboardPng from '../assets/images/meth/dashboard.png';
 import imageMethResultPng from '../assets/images/meth/result.png';
 import imageMethProcessingPng from '../assets/images/meth/processing.png';
-import iconInfoSvg from '../assets/icons/info.svg';
 import imageLabGisellaPng from '../assets/images/lab-gisella.png';
 import imageGisellaJpg from '../assets/images/gisella.jpg';
 import imagePdfPng from '../assets/images/pdf.png';
+import iconInfoSvg from '../assets/icons/info.svg';
 
 const navLinks = [
   {
