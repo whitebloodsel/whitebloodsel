@@ -84,7 +84,9 @@ const Finder = () => {
     <>
       <div id="window-header">
         <WindowControlls target="finder" />
-        <h2 className="font-bold">Portfolio</h2>
+        <h2 className="font-bold">
+          {activeLocation?.type === "about" ? "About me" : "Portfolio"}
+        </h2>
         <Search className="icon" />
       </div>
 

@@ -4,14 +4,17 @@ const StickyNote = () => {
   return (
     <div className="
       /* Position: Fixed below navbar */
-      fixed z-40 
+      fixed z-40
       top-[72px] right-4      /* Mobile: 72px from top (16px below a 56px navbar) */
       md:top-24 md:right-15   /* Desktop: More spacing for larger screens */
-      
+
       /* Sizing: Responsive width */
-      w-[180px]              /* Default width for small screens */
+      w-[160px]              /* Default width for small screens */
       md:w-60                /* Full width for desktop */
-      
+
+      /* Phone layout: sits in-page to the left of the project widget */
+      max-sm:static max-sm:mt-0 max-sm:mb-0
+
       /* Visuals & Animation */
       bg-yellow-200 shadow-lg rounded-lg overflow-hidden
       transform transition-all duration-300 ease-in-out
