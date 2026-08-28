@@ -2,12 +2,20 @@
 
 @import "tailwindcss";
 
+@font-face {
+  font-family: "Child Writing";
+  src: url("./assets/fonts/child-font.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 html,
 body {
   width: 100vw;
   /* overflow: */
   height: 100vh;
-  background-color: rgb(230, 229, 228);
+  background-color: rgb(222, 238, 255);
 
   overflow: hidden; 
   position: fixed;
@@ -17,18 +25,21 @@ body {
   background-position: center;
 
   background-image: 
-    radial-gradient(circle, rgba(0, 0, 0, 0.15) 1px, transparent 2px),
-    radial-gradient(circle, rgba(0, 0, 0, 0.15) 1px, transparent 2px);
+    radial-gradient(circle, rgba(168, 180, 87, 0.3) 1px, transparent 2px),
+    radial-gradient(circle, rgba(80, 143, 185, 0.3) 1px, transparent 2px);
   
   background-size: 40px 40px;
   background-position: 0 0, 20px 20px; 
   
   background-repeat: repeat;
+
+
 }
 
 @theme {
   --font-georama: "Georama", sans-serif;
   --font-roboto: "Roboto Mono", monospace;
+  --font-child: "Child Writing", cursive;
   --breakpoint-3xl: 1920px;
 
   /* Redefines what every sm:/max-sm: utility in this file means, so the
@@ -149,8 +160,12 @@ body {
 
     h2 {
       @apply absolute left-1/2 -translate-x-1/2 font-medium text-gray-600;
-      pointer-events: none; 
+      pointer-events: none;
       z-index: 1;
+
+      .header-dot {
+        @apply size-2 rounded-full shrink-0;
+      }
     }
   }
 
@@ -469,8 +484,13 @@ body {
   #home {
     @apply relative z-0;
 
-    ul {
-      li {
+    /* direct-child combinator on BOTH levels — the sticky note's own
+       <ul><li> todo list is nested inside .category-grid too, and its
+       <li>s are direct children of THAT ul, so scoping just li-to-ul
+       isn't enough. The ul itself must be a direct child of #home,
+       which excludes the sticky note's deeply-nested todo list. */
+    > ul {
+      > li {
         @apply z-0 select-none flex items-center flex-col;
 
         img {
@@ -481,6 +501,34 @@ body {
           @apply text-sm text-white text-center px-1 rounded-md group-hover:bg-blue-500 transition-colors max-w-40;
           text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.8), 0px 0px 1px rgba(33, 33, 33, 0.5);
         }
+      }
+    }
+
+    /* Phone home screen: projects are grouped into iOS-style category
+       folders instead of scattered individually — each folder previews
+       up to 4 of its projects in a 2x2 grid, matching how a real iPhone
+       folder icon looks before you open it. */
+    .category-grid {
+      @apply grid grid-cols-4 gap-x-3 gap-y-2 pt-10 px-8 pb-28;
+      /* lets the folder icons backfill the empty cells beside the sticky
+         note's 2x2 span instead of being pushed after it in row order */
+      grid-auto-flow: dense;
+    }
+
+    .category-folder {
+      @apply flex flex-col items-center gap-1 cursor-pointer;
+
+      p {
+        @apply text-xs text-white text-center truncate w-full;
+        text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.8), 0px 0px 1px rgba(33, 33, 33, 0.5);
+      }
+    }
+
+    .folder-icon {
+      @apply size-16 rounded-2xl grid grid-cols-2 grid-rows-2 gap-1 p-2 bg-white/25 backdrop-blur-2xl border border-white/50 shadow-[0_8px_32px_rgba(0,0,0,0.18),inset_0_1px_1px_rgba(255,255,255,0.7),inset_0_-1px_1px_rgba(0,0,0,0.05)];
+
+      img {
+        @apply size-full object-contain rounded-md;
       }
     }
   }
@@ -504,6 +552,14 @@ body {
       }
 
       .icon-frame img {
+        @apply w-full h-full object-contain;
+      }
+
+      /* only contact.png and terminal.png have real padding baked in around
+         the glyph — notes.png and pages.png are already full-bleed, so
+         zooming them too just crops into the artwork itself */
+      &[aria-label="Contact"] .icon-frame img,
+      &[aria-label="Skills"] .icon-frame img {
         @apply w-[135%] h-[135%] object-cover;
       }
 
@@ -515,10 +571,6 @@ body {
 
   .home-indicator {
     @apply hidden max-sm:block fixed bottom-1.5 left-1/2 -translate-x-1/2 z-50 w-32 h-1.5 rounded-full bg-black/40;
-  }
-
-  #mobile-widgets {
-    @apply max-sm:flex items-stretch gap-4 max-sm:px-8 max-sm:pt-6;
   }
 
   #project-widget {

@@ -165,13 +165,17 @@ const techStack = [
     items: ["Hugging Face", "OpenCV", "Numpy", "Pandas"],
   },
   {
-    category: "Web",
-    items: ["React", "Next.js", "Tailwind CSS", "Flask"],
+    category: "Frameworks",
+    items: ["SwiftUI", "UIKit", "React", "Next.js"],
   },
   {
-    category: "Mobile",
-    items: ["Flutter", "React Native"],
+    category: "",
+    items: ["Tailwind CSS", "Flask"],
   },
+  // {
+  //   category: "Mobile",
+  //   items: ["Flutter", "React Native"],
+  // },
   // {
   //   category: "Backend",
   //   items: ["Flask"],
@@ -182,7 +186,7 @@ const techStack = [
   // },
   {
     category: "Tools",
-    items: ["Android Studio", "Git", "GitHub", "Tableu"],
+    items: ["Firebase", "Git", "GitHub", "Tableu"],
   },
   {
     category: "",

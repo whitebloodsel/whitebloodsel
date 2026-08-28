@@ -10,8 +10,12 @@ const Navbar = () => {
   return (
     <nav>
         <div>
-            <img src={logo3Svg} alt="logo" className="w-4.5 "/>
-            <p className='font-bold'>Gisella's Portfolio</p>
+            <div className="flex items-center gap-2">
+                <img src={logo3Svg} alt="logo" className="w-7.5 "/>
+                <p className='font-bold text-xl max-sm:text-base'>
+                    <span className="relative -top-0.5 font-child text-xl font-normal max-sm:text-base">Gisella's</span> Portfolio
+                </p>
+            </div>
             <ul>
                 {navLinks.map(({id, name, type}) => (
                     <li key={id} onClick={() => openWindow(type)}>

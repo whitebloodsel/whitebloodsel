@@ -12,12 +12,12 @@ const Finder = () => {
   const { activeLocation, setActiveLocation } = useLocationStore();
   const [currentProject, setCurrentProject] = useState(null);
 
-  // Reset currentProject when activeLocation changes to a project from home
+  // Reset currentProject whenever the active folder/category changes —
+  // otherwise switching to a different category folder kept showing
+  // whatever project was last opened, since only navigating to a project
+  // location (not a tag/category) used to clear it.
   useEffect(() => {
-    // If activeLocation is a project (has tags property), don't use currentProject
-    if (activeLocation?.tags !== undefined) {
-      setCurrentProject(null);
-    }
+    setCurrentProject(null);
   }, [activeLocation?.id]);
 
   // Helper function to get filtered projects for a tag
@@ -62,6 +62,19 @@ const Finder = () => {
     setActiveLocation(locations.work);
   };
 
+  // Header title: project name when inside a project, folder name (in its
+  // tag color) when browsing a category, "About me" for the about section,
+  // otherwise the default "Portfolio" home view.
+  const getHeaderTitle = () => {
+    if (currentProject) return { text: currentProject.name };
+    if (activeLocation?.tags !== undefined)
+      return { text: activeLocation.name };
+    if (activeLocation?.type === "tag")
+      return { text: activeLocation.name, color: activeLocation.color };
+    if (activeLocation?.type === "about") return { text: "About me" };
+    return { text: "Portfolio" };
+  };
+
   // Get the content to display based on active location
   const getDisplayContent = () => {
     // If viewing a specific project
@@ -80,12 +93,23 @@ const Finder = () => {
     return activeLocation?.children || [];
   };
 
+  const headerTitle = getHeaderTitle();
+
   return (
     <>
       <div id="window-header">
-        <WindowControlls target="finder" />
-        <h2 className="font-bold">
-          {activeLocation?.type === "about" ? "About me" : "Portfolio"}
+        <WindowControlls
+          target="finder"
+          onBack={currentProject ? () => setCurrentProject(null) : undefined}
+        />
+        <h2 className="font-bold flex items-center justify-center gap-1.5">
+          {headerTitle.color && (
+            <span
+              className="header-dot"
+              style={{ backgroundColor: headerTitle.color }}
+            />
+          )}
+          {headerTitle.text}
         </h2>
         <Search className="icon" />
       </div>

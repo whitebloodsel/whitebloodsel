@@ -3,7 +3,7 @@ import useIsMobile from '#store/device'
 import { ChevronLeft } from 'lucide-react'
 import React from 'react'
 
-const WindowControlls = ({target}) => {
+const WindowControlls = ({target, onBack}) => {
     const {closeWindow} = useWindowStore();
     const isMobile = useIsMobile();
 
@@ -13,7 +13,7 @@ const WindowControlls = ({target}) => {
           type="button"
           className="mobile-back"
           aria-label="Back"
-          onClick={() => closeWindow(target)}
+          onClick={onBack ?? (() => closeWindow(target))}
         >
           <ChevronLeft strokeWidth={2.5} />
         </button>

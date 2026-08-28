@@ -8,12 +8,13 @@ const StickyNote = () => {
       top-[72px] right-4      /* Mobile: 72px from top (16px below a 56px navbar) */
       md:top-24 md:right-15   /* Desktop: More spacing for larger screens */
 
-      /* Sizing: Responsive width */
-      w-[160px]              /* Default width for small screens */
-      md:w-60                /* Full width for desktop */
+      /* Sizing: Responsive width — a little smaller overall than before */
+      w-[135px]              /* Default width for small screens */
+      md:w-52                /* Desktop */
 
-      /* Phone layout: sits in-page to the left of the project widget */
-      max-sm:static max-sm:mt-0 max-sm:mb-0
+      /* Phone home screen: fills the 2x2 grid cell its <li> wrapper spans,
+         just a little shorter than the full cell height */
+      max-sm:static max-sm:w-full max-sm:h-[calc(100%-14px)] max-sm:mt-0 max-sm:mb-0
 
       /* Visuals & Animation */
       bg-yellow-200 shadow-lg rounded-lg overflow-hidden
@@ -21,9 +22,9 @@ const StickyNote = () => {
       hover:rotate-2 hover:-translate-y-1 hover:shadow-2xl
     ">
       {/* Tape Effect */}
-      <div className="bg-yellow-400 h-3 opacity-80"></div>
-      
-      <div className='p-4 pt-2'>
+      <div className="bg-yellow-400 h-2.5 opacity-80"></div>
+
+      <div className='p-3 pt-1.5 text-left'>
         <h3 className="font-bold mb-1 text-gray-800 text-sm md:text-base border-b border-yellow-300/50 pb-1">
           To-Do's
         </h3>

@@ -1,7 +1,7 @@
 import gsap from 'gsap';
 import { Draggable } from 'gsap/Draggable';
 
-import { Dock, Home, Navbar, StickyNote, MobileNavbar, ProjectWidget, RotateLock } from '#components'
+import { Dock, Home, Navbar, MobileNavbar, RotateLock } from '#components'
 import React from 'react'
 import { Terminal, Resume, Finder, Text, Contacts, Image} from '#windows';
 
@@ -13,11 +13,6 @@ const App = () => {
       <RotateLock />
       <Navbar />
       <Dock />
-
-      <section id="mobile-widgets">
-        <StickyNote />
-        <ProjectWidget />
-      </section>
 
       <Home />
       <MobileNavbar />
