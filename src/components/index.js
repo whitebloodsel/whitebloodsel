@@ -5,5 +5,6 @@ import Home from '#components/Home.jsx'
 import StickyNote from './StickyNote'
 import MobileNavbar from './MobileNavbar'
 import ProjectWidget from './ProjectWidget'
+import RotateLock from './RotateLock'
 
-export { Navbar, Dock, WindowControlls, Home, StickyNote, MobileNavbar, ProjectWidget }
+export { Navbar, Dock, WindowControlls, Home, StickyNote, MobileNavbar, ProjectWidget, RotateLock }

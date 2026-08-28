@@ -1,7 +1,7 @@
 import gsap from 'gsap';
 import { Draggable } from 'gsap/Draggable';
 
-import { Dock, Home, Navbar, StickyNote, MobileNavbar, ProjectWidget } from '#components'
+import { Dock, Home, Navbar, StickyNote, MobileNavbar, ProjectWidget, RotateLock } from '#components'
 import React from 'react'
 import { Terminal, Resume, Finder, Text, Contacts, Image} from '#windows';
 
@@ -10,6 +10,7 @@ gsap.registerPlugin(Draggable);
 const App = () => {
   return (
     <main>
+      <RotateLock />
       <Navbar />
       <Dock />
 

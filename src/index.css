@@ -74,11 +74,7 @@ body {
     }
 
     .mobile-status {
-      @apply hidden max-sm:flex items-center gap-2;
-
-      time {
-        @apply text-sm;
-      }
+      @apply hidden max-sm:flex items-center gap-3;
 
       img {
         @apply size-4;
@@ -559,6 +555,29 @@ body {
     to {
       opacity: 1;
       transform: scale(1);
+    }
+  }
+
+  #rotate-lock {
+    display: none;
+  }
+
+  /* True OS-level orientation lock isn't available to a website (only
+     Android Chrome supports it, and only in fullscreen) — this instead
+     detects a phone-sized screen turned sideways (short viewport height,
+     landscape orientation) and blocks the app underneath with a prompt
+     to rotate back, so the layout is never actually used in landscape. */
+  @media (orientation: landscape) and (max-height: 500px) {
+    #rotate-lock {
+      @apply fixed inset-0 z-[9999] flex flex-col items-center justify-center gap-4 bg-black text-white select-none;
+
+      svg {
+        @apply size-10;
+      }
+
+      p {
+        @apply text-sm tracking-wide px-10 text-center;
+      }
     }
   }
 }
