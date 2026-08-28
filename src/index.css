@@ -228,7 +228,7 @@ body {
       }
 
       .content {
-        @apply py-5 my-5 border-y border-dashed space-y-1 max-sm:space-y-3;
+        @apply py-5 my-5 border-y border-dashed space-y-1;
 
         li {
           .check {

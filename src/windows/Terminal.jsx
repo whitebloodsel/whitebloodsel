@@ -23,10 +23,12 @@ const Terminal = () => {
         </div>
 
         <ul className='content'>
-            {techStack.map(({category, items}) => (
-                <li key={category} className="flex items-center max-sm:items-start max-sm:flex-wrap max-sm:gap-y-1">
-                    <Check className="check" size={20} color="#fffff"/>
-                    <h3>{category}</h3>
+            {techStack.map(({category, items}, index) => (
+                <li key={index} className="flex items-center max-sm:items-start max-sm:flex-wrap max-sm:gap-y-1">
+                    <Check className={`check${!category ? ' max-sm:hidden' : ''}`} size={20} color="#fffff"/>
+                    <h3 className={!category ? 'invisible max-sm:hidden' : undefined}>
+                        {category || 'placeholder'}
+                    </h3>
                     <ul>
                         {items.map((item, i) => (
                             <li key={i}>{item}{i < items.length - 1 ? ', ' : ''}</li>
